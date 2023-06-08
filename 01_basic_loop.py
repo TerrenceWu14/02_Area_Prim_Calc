@@ -38,4 +38,4 @@ perimeter = 2 * (width + height)
 
 # Output area and perimeter
 print("Perimeter: {} units" .format(perimeter))
-print("Area: {} units" .format(area))3
+print("Area: {} units" .format(area))
