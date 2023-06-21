@@ -31,13 +31,13 @@ def num_check(question):
 
 # Introduction / Heading print statements
 print()
-print("**** Fence Cost Calculator *****")
+print("**** Fence Cost Calculator ****")
 print()
 
 # Start of calculator loop
 keep_going = ""
 while keep_going == "":
-   # Call your number checker function three times to get the width, length and cost_per_m of the fencing
+   # Call your number checker function three times to get the width, length and cost_per_meter of the fencing
     print("What is the width, length and cost of fencing per meter? ")
     width = num_check("Width: ")
     length = num_check("Length: ")
