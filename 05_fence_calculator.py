@@ -28,6 +28,7 @@ def num_check(question):
 
 # Main Routine goes here
 
+
 # Introduction / Heading print statements
 print()
 print("**** Fence Cost Calculator *****")
@@ -36,24 +37,25 @@ print()
 # Start of calculator loop
 keep_going = ""
 while keep_going == "":
+   # Call your number checker function three times to get the width, length and cost_per_m of the fencing
+    print("What is the width, length and cost of fencing per meter? ")
     width = num_check("Width: ")
-    height = num_check("Height: ")
-
-    # call your number checker function three times to get the 
-    # width, length and cost_per_m of the fencing
-    print("replace me with input statements")
-
-    # Calulate perimeter (width + height) x 2
-    perimeter = (width + height) * 2
+    length = num_check("Length: ")
+    price = num_check("Price Per Meter: ")
+    # Calculate perimeter (width + height) x 2
+    perimeter = (width + length) * 2
     # Calculate the cost of the fencing (perimeter x price / meter)
+    cost_of_fencing = perimeter * price
 
 
-    # Output the perimeter and cost of the fencing
+# Output the perimeter and cost of the fencing
+print("Perimeter: {:.2f} units" .format(perimeter))
+print("Cost: {:.2f} units" .format(cost_of_fencing))
 
+
+keep_going = input("Press <enter> to keep going or any key to quit")
     
-    keep_going = input("Press <enter> to keep going or any key to quit")
-    
-print()
+print("- * 30")
 print("Thanks for using the Fencing cost calculator")
 
         
