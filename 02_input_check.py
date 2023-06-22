@@ -19,7 +19,9 @@ def user_choice():
 
 
 # Main routine goes here
-data_type = user_choice()
-print("You chose", data_type)
+keep_going = ""
+while keep_going == "":
+    data_type = user_choice()
+    print("You chose", data_type)
 
-print()
+    print()
