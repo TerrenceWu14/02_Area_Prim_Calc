@@ -101,13 +101,13 @@ def image_bits():
     image_width = num_check("Image Width:", 1)
     # Calculates # of Bits and Pixels
     image_pixels = img_height * image_width
-    image_bits = image_pixels * 24
+    img_bits = image_pixels * 24
 
     # Outputs the answer
     print()
     print("# of pixels = {} x {} = {}".format(img_height, image_width, image_pixels))
 
-    print("# of bits = {} x 24= {}".format(image_pixels, image_bits))
+    print("# of bits = {} x 24= {}".format(image_pixels, img_bits))
     print()
 
     return ""
